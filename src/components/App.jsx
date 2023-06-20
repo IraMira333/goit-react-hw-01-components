@@ -1,11 +1,12 @@
-import Profile from './Profile';
-import user from '../path/user.json';
-import data from '../path/data.json';
-import friends from '../path/friends.json';
-import transactions from '../path/transactions.json';
-import Statistics from './Statistics';
-import FriendList from './FriendList';
-import TransactionHistory from './TransactionHistory';
+import user from 'path/user.json';
+import data from 'path/data.json';
+import friends from 'path/friends.json';
+import transactions from 'path/transactions.json';
+import Profile from 'components/Profile/Profile';
+import Statistics from 'components/Ststistics/Statistics';
+import FriendList from 'components/FriendList/FriendList';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
+
 export const App = () => {
   return (
     <div
