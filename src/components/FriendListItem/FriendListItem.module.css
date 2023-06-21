@@ -22,9 +22,11 @@
 
   border-radius: 50%;
 }
-.true {
+.online {
+  composes: status;
   background-color: green;
 }
-.false {
+.offline {
+  composes: status;
   background-color: rgb(236, 43, 14);
 }
