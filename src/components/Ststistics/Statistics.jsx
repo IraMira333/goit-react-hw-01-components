@@ -7,7 +7,7 @@ export default function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
-      <ul className={css['stat-list']}>
+      <ul className={css.stat_list}>
         {stats.map(stat => (
           <li
             key={stat.id}
@@ -29,6 +29,10 @@ export default function Statistics({ title, stats }) {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.shape({ id: PropTypes.string.isRequired })
-  ),
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
